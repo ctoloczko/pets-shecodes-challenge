@@ -11,71 +11,107 @@
       rel="stylesheet"
     />
     <style>
-      header {
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)
-          ),
-          url("https://i.imgur.com/Jy9tfhI.jpeg");
-        max-width: 100%;
-        background-position: center;
-        background-repeat: none;
-        background-size: cover;
-        padding: 300px;
-        color: rgb(221, 226, 231);
-        text-align: center;
-      }
-      body {
-        background-color: #e7e5e7;
-        margin: 0;
-      }
+                header {
+                  background-image: linear-gradient(
+                      rgba(0, 0, 0, 0.3),
+                      rgba(0, 0, 0, 0.3)
+                    ),
+                    url("https://i.imgur.com/Jy9tfhI.jpeg");
+                  max-width: 100%;
+                  background-position: center;
+                  background-repeat: none;
+                  background-size: cover;
+                  padding: 300px;
+                  color: rgb(221, 226, 231);
+                  text-align: center;
+                }
+                body {
+                  background-color: #e7e5e7;
+                  margin: 0;
+                }
 
-      h1,
-      h2,
-      h3 {
-        text-transform: uppercase;
-        opacity: 0.7;
-        font-family: "Josefin Sans", sans-serif;
-        font-weight: 300;
-      }
-      h1 {
-        font-size: 45px;
-        letter-spacing: 9px;
-        padding: 30px;
-      }
 
-      h2,
-      h3 {
-        letter-spacing: 6px;
-        text-align: center;
-        margin: 30px auto 5px;
+                  h1 {
+                  font-size: 45px;
+                  letter-spacing: 9px;
+                  padding: 40px;
+                }
+               h2 {
+          font-size: 40px;
       }
+                h1,
+                h2,
+                h3 {
+                  text-transform: uppercase;
+                  opacity: 0.6;
+                  font-family: "Josefin Sans", sans-serif;
+                  font-weight: 300;
+                }
 
-      p {
-        font-family: "Open Sans", sans-serif;
-        padding: 10px 70px;
-        margin-top: 0;
-        line-height: 1.5;
-        opacity: 0.7;
-      }
-      @media (max-width: 900px) {
-        header {
-          padding: 90px 0;
-        }
 
-        header h1,
-        h2,
-        h3 {
-          margin: 20px;
-        }
-        header h1 {
-          font-size: 30px;
-        }
+                h2,
+                h3 {
+                  letter-spacing: 6px;
+                  text-align: center;
+                  margin: 30px auto 5px;
+                }
 
-        header h2 {
-          font-size: 12px;
-        }
-      }
+                p {
+                  font-family: "Open Sans", sans-serif;
+                  padding: 20px 20px;
+                  margin-top: 0;
+                  line-height: 1.5;
+                  opacity: 0.6;
+                }
+
+                .container {
+                    margin: 20px 40px;
+
+                }
+                .grid {
+                  display: grid;
+                  grid-gap: 10px;
+                }
+
+                .grid-2-col {
+                  grid-template-columns: 1fr 1fr;
+                }
+
+                .grid-3-col {
+                  grid-template-columns: 1fr 1fr 1fr;
+                }
+
+                .grid-4-col {
+                  grid-template-columns: 1fr 1fr 1fr 1fr;
+                }
+
+                .img-responsive {
+                  max-width: 90%;
+                  height: auto;
+                  padding: 20px;
+                }
+
+                @media (max-width: 900px) {
+                  header {
+                    padding: 90px 0;
+                  }
+
+                  header h1,
+                  h2,
+                  h3 {
+                    margin: 20px;
+                  }
+                  header h1 {
+                    font-size: 30px;
+                  }
+
+                  header h2 {
+                    font-size: 12px;
+                  }
+
+                   .grid-2-col {
+              grid-template-columns: 1fr;
+                }
     </style>
   </head>
   <body>
@@ -83,40 +119,130 @@
       <h1>Saarloos Wolfdogs</h1>
       <h3>Wild Spirit, Loyal Companion</h3>
     </header>
-    <h2>Who Are Saarloos Wolfdogs?</h2>
-    <p>
-      The Saarloos Wolfdog is a unique and captivating breed created by crossing
-      a German Shepherd with a Eurasian wolf. Known for their striking wolf-like
-      appearance, these dogs are intelligent, independent, and highly loyal to
-      their families. While reserved with strangers, they form strong bonds with
-      their owners and thrive in active, experienced homes. Saarloos Wolfdogs
-      require patience, proper training, and plenty of exercise, making them
-      ideal companions for those who appreciate their wild spirit and gentle
-      nature.
-    </p>
-    <p>
-      My pack consists of two incredible Saarloos wolfdogs: Baldur, a lively
-      3-year-old, and Fenrir, a wise and devoted 9-year-old. They thrive on
-      training sessions, exploring nature, and being constant companions in
-      everything I do. Whether we're hiking through forests or sharing quiet
-      moments at home, their presence makes every day an adventure.
-    </p>
 
-    <h2>Adventures With My Pack</h2>
-    <p>
-      From mountain hikes to serene lakes, my wolfdogs and I explore the world
-      together.
-    </p>
+    <div class="container">
+      <h2>Who Are Saarloos Wolfdogs?</h2>
 
-    <h2>The Best Coding Coworkers</h2>
-    <p>
-      They keep me company during long coding sessions and remind me to take
-      breaks.
-    </p>
-
-    <h2>
-      Want to learn more about Saarloos wolfdogs or see more of our and our
-      friends' adventures?
-    </h2>
+      <div class="grid grid-2-col">
+        <div>
+          <p>
+            The Saarloos Wolfdog is a unique and captivating breed created by
+            crossing a German Shepherd with a Eurasian wolf. Known for their
+            striking wolf-like appearance, these dogs are intelligent,
+            independent, and highly loyal to their families. While reserved with
+            strangers, they form strong bonds with their owners and thrive in
+            active, experienced homes. Saarloos Wolfdogs require patience,
+            proper training, and plenty of exercise, making them ideal
+            companions for those who appreciate their wild spirit and gentle
+            nature.
+          </p>
+          <p>
+            My pack consists of two incredible Saarloos wolfdogs: Baldur, a
+            lively 3-year-old, and Fenrir, a wise and devoted 9-year-old. They
+            thrive on training sessions, exploring nature, and being constant
+            companions in everything I do. Whether we're hiking through forests
+            or sharing quiet moments at home, their presence makes every day an
+            adventure.
+          </p>
+        </div>
+        <div>
+          <img
+            class="img-responsive"
+            src="https://i.imgur.com/N1JiXeh.jpeg"
+            alt="Saarloos wolfdog"
+          />
+        </div>
+      </div>
+      <h2>Adventures With My Pack</h2>
+      <p>
+        From mountain hikes to serene lakes, my wolfdogs and I explore the world
+        together.
+      </p>
+      <div class="grid-3-col grid">
+        <div>
+          <img
+            class="img-responsive"
+            src="https://i.imgur.com/uapR7OH.jpeg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="img-responsive"
+            src="https://i.imgur.com/zwZNgYd.jpeg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="img-responsive"
+            src="https://i.imgur.com/zRZQteG.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="grid-3-col grid">
+        <div>
+          <img
+            class="img-responsive"
+            src="https://i.imgur.com/zH5M4Qr.jpeg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="img-responsive"
+            src="https://i.imgur.com/lYtp1nT.jpeg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="img-responsive"
+            src="https://i.imgur.com/5v1Wdrb.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+      <h2>The Best Coding Coworkers</h2>
+      <p>
+        They keep me company during long coding sessions and remind me to take
+        breaks.
+      </p>
+      <div class="grid-4-col grid">
+        <div>
+          <img
+            class="img-responsive"
+            src="https://i.imgur.com/0Url1zW.jpeg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="img-responsive"
+            src="https://i.imgur.com/XbITIdh.jpeg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="img-responsive"
+            src="https://i.imgur.com/KGqsei9.jpeg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="img-responsive"
+            src="https://i.imgur.com/9SM81ji.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+      <h2>
+        Want to learn more about Saarloos wolfdogs or see more of our and our
+        friends' adventures?
+      </h2>
+    </div>
   </body>
 </html>
