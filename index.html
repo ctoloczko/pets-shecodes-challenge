@@ -11,107 +11,119 @@
       rel="stylesheet"
     />
     <style>
-                header {
-                  background-image: linear-gradient(
-                      rgba(0, 0, 0, 0.3),
-                      rgba(0, 0, 0, 0.3)
-                    ),
-                    url("https://i.imgur.com/Jy9tfhI.jpeg");
-                  max-width: 100%;
-                  background-position: center;
-                  background-repeat: none;
-                  background-size: cover;
-                  padding: 300px;
-                  color: rgb(221, 226, 231);
-                  text-align: center;
-                }
-                body {
-                  background-color: #e7e5e7;
-                  margin: 0;
-                }
-
-
-                  h1 {
-                  font-size: 45px;
-                  letter-spacing: 9px;
-                  padding: 40px;
-                }
-               h2 {
-          font-size: 40px;
+      header {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("https://i.imgur.com/Jy9tfhI.jpeg");
+        max-width: 100%;
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        padding: 300px;
+        color: rgb(221, 226, 231);
+        text-align: center;
+        margin-bottom: 50px;
       }
-                h1,
-                h2,
-                h3 {
-                  text-transform: uppercase;
-                  opacity: 0.6;
-                  font-family: "Josefin Sans", sans-serif;
-                  font-weight: 300;
-                }
+      body {
+        background-color: #e7e5e7;
+        margin: 0;
+      }
 
+      h1 {
+        font-size: 48px;
+        letter-spacing: 9px;
+        padding: 40px;
+      }
+      h2 {
+        font-size: 40px;
+      }
+      h1,
+      h2,
+      h3 {
+        text-transform: uppercase;
+        opacity: 0.6;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+      }
 
-                h2,
-                h3 {
-                  letter-spacing: 6px;
-                  text-align: center;
-                  margin: 30px auto 5px;
-                }
+      h2,
+      h3 {
+        letter-spacing: 6px;
+        text-align: center;
+        margin: 30px auto 5px;
+      }
 
-                p {
-                  font-family: "Open Sans", sans-serif;
-                  padding: 20px 20px;
-                  margin-top: 0;
-                  line-height: 1.5;
-                  opacity: 0.6;
-                }
+      p {
+        font-family: "Open Sans", sans-serif;
+        padding: 0 20px 20px 20px;
+        margin-top: 0;
+        line-height: 1.5;
+        opacity: 0.6;
+      }
 
-                .container {
-                    margin: 20px 40px;
+      .center {
+        text-align: center;
+      }
 
-                }
-                .grid {
-                  display: grid;
-                  grid-gap: 10px;
-                }
+      .container {
+        margin: 20px 40px;
+      }
+      .grid {
+        display: grid;
+        grid-gap: 10px;
+      }
 
-                .grid-2-col {
-                  grid-template-columns: 1fr 1fr;
-                }
+      .grid-2-col {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 30px;
+      }
 
-                .grid-3-col {
-                  grid-template-columns: 1fr 1fr 1fr;
-                }
+      .grid-3-col {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
 
-                .grid-4-col {
-                  grid-template-columns: 1fr 1fr 1fr 1fr;
-                }
+      .grid-4-col {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
 
-                .img-responsive {
-                  max-width: 90%;
-                  height: auto;
-                  padding: 20px;
-                }
+      .img-responsive {
+        max-width: 90%;
+        height: auto;
+        padding: 15px;
+        background-color: #dcd9db;
+        border-radius: 4px;
+      }
 
-                @media (max-width: 900px) {
-                  header {
-                    padding: 90px 0;
-                  }
+      .gallery-row {
+        padding-bottom: 20px;
+      }
 
-                  header h1,
-                  h2,
-                  h3 {
-                    margin: 20px;
-                  }
-                  header h1 {
-                    font-size: 30px;
-                  }
+      @media (max-width: 900px) {
+        header {
+          padding: 90px 0;
+        }
 
-                  header h2 {
-                    font-size: 12px;
-                  }
+        header h1,
+        h2,
+        h3 {
+          margin: 20px;
+        }
+        header h1 {
+          font-size: 30px;
+        }
 
-                   .grid-2-col,  .grid-3-col,  .grid-4-col {
-              grid-template-columns: 1fr;
-                }
+        header h2 {
+          font-size: 12px;
+        }
+
+        .grid-2-col,
+        .grid-3-col,
+        .grid-4-col {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
   <body>
@@ -126,6 +138,7 @@
       <div class="grid grid-2-col">
         <div>
           <p>
+            <br />
             The Saarloos Wolfdog is a unique and captivating breed created by
             crossing a German Shepherd with a Eurasian wolf. Known for their
             striking wolf-like appearance, these dogs are intelligent,
@@ -154,7 +167,7 @@
         </div>
       </div>
       <h2>Adventures With My Pack</h2>
-      <p>
+      <p class="center">
         From mountain hikes to serene lakes, my wolfdogs and I explore the world
         together.
       </p>
@@ -166,7 +179,7 @@
             alt=""
           />
         </div>
-        <div>
+        <div class="gallery-row">
           <img
             class="img-responsive"
             src="https://i.imgur.com/zwZNgYd.jpeg"
@@ -205,7 +218,7 @@
         </div>
       </div>
       <h2>The Best Coding Coworkers</h2>
-      <p>
+      <p class="center">
         They keep me company during long coding sessions and remind me to take
         breaks.
       </p>
@@ -240,7 +253,7 @@
         </div>
       </div>
       <h2>Did You Know?</h2>
-      <p id="random-fact">
+      <p id="random-fact" class="center">
         Click the button to learn something interesting about Saarloos wolfdogs!
       </p>
       <button onclick="showRandomFact()">Show Random Fact</button>
