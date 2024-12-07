@@ -239,10 +239,25 @@
           />
         </div>
       </div>
-      <h2>
-        Want to learn more about Saarloos wolfdogs or see more of our and our
-        friends' adventures?
-      </h2>
+      <h2>Did You Know?</h2>
+      <p id="random-fact">
+        Click the button to learn something interesting about Saarloos wolfdogs!
+      </p>
+      <button onclick="showRandomFact()">Show Random Fact</button>
     </div>
+    <script>
+      const facts = [
+        "Saarloos wolfdogs are a mix of German Shepherd and Eurasian wolf.",
+        "They are highly loyal but require experienced owners.",
+        "Saarloos wolfdogs thrive in active environments.",
+        "They have a striking wolf-like appearance.",
+        "These dogs are reserved with strangers but form deep bonds with their owners.",
+      ];
+
+      function showRandomFact() {
+        const randomIndex = Math.floor(Math.random() * facts.length);
+        document.getElementById("random-fact").textContent = facts[randomIndex];
+      }
+    </script>
   </body>
 </html>
