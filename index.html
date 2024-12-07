@@ -21,7 +21,7 @@
         background-position: center;
         background-repeat: none;
         background-size: cover;
-        padding: 300px;
+        padding: 250px;
         color: rgb(221, 226, 231);
         text-align: center;
         margin-bottom: 50px;
@@ -63,6 +63,22 @@
         opacity: 0.6;
       }
 
+      button {
+        padding: 10px 20px;
+        font-family: "Open Sans", sans-serif;
+        align-items: center;
+        border-radius: 4px;
+        background-color: #dbd9db;
+        border: solid 1px rgb(37, 37, 37, 0.3);
+        margin-bottom: 30px;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
       .center {
         text-align: center;
       }
@@ -100,6 +116,23 @@
         padding-bottom: 20px;
       }
 
+      footer {
+        font-size: 12px;
+
+        padding: 15px;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        color: rgb(0, 0, 0, 0.6);
+      }
+
+      footer a {
+        text-decoration: none;
+        font-weight: 600;
+        color: black;
+        line-height: 1.5;
+        opacity: 0.6;
+      }
+
       @media (max-width: 900px) {
         header {
           padding: 90px 0;
@@ -118,10 +151,27 @@
           font-size: 12px;
         }
 
+        h2 {
+          font-size: 30px;
+          margin: 10px;
+        }
+
+        .container {
+          padding: 0 10px;
+          margin: 0;
+        }
+
         .grid-2-col,
         .grid-3-col,
         .grid-4-col {
           grid-template-columns: 1fr;
+        }
+
+        .grid-2-col {
+          padding-top: 0;
+        }
+        .gallery-row {
+          padding-bottom: 0;
         }
       }
     </style>
@@ -131,140 +181,166 @@
       <h1>Saarloos Wolfdogs</h1>
       <h3>Wild Spirit, Loyal Companion</h3>
     </header>
+    <main>
+      <div class="container">
+        <h2>Who Are Saarloos Wolfdogs?</h2>
 
-    <div class="container">
-      <h2>Who Are Saarloos Wolfdogs?</h2>
-
-      <div class="grid grid-2-col">
-        <div>
-          <p>
-            <br />
-            The Saarloos Wolfdog is a unique and captivating breed created by
-            crossing a German Shepherd with a Eurasian wolf. Known for their
-            striking wolf-like appearance, these dogs are intelligent,
-            independent, and highly loyal to their families. While reserved with
-            strangers, they form strong bonds with their owners and thrive in
-            active, experienced homes. Saarloos Wolfdogs require patience,
-            proper training, and plenty of exercise, making them ideal
-            companions for those who appreciate their wild spirit and gentle
-            nature.
-          </p>
-          <p>
-            My pack consists of two incredible Saarloos wolfdogs: Baldur, a
-            lively 3-year-old, and Fenrir, a wise and devoted 9-year-old. They
-            thrive on training sessions, exploring nature, and being constant
-            companions in everything I do. Whether we're hiking through forests
-            or sharing quiet moments at home, their presence makes every day an
-            adventure.
-          </p>
+        <div class="grid grid-2-col">
+          <div>
+            <p>
+              <br />
+              The Saarloos Wolfdog is a unique and captivating breed created by
+              crossing a German Shepherd with a Eurasian wolf. Known for their
+              striking wolf-like appearance, these dogs are intelligent,
+              independent, and highly loyal to their families. While reserved
+              with strangers, they form strong bonds with their owners and
+              thrive in active, experienced homes. Saarloos Wolfdogs require
+              patience, proper training, and plenty of exercise, making them
+              ideal companions for those who appreciate their wild spirit and
+              gentle nature.
+            </p>
+            <p>
+              My pack consists of two incredible Saarloos wolfdogs: Baldur, a
+              lively 3-year-old, and Fenrir, a wise and devoted 9-year-old. They
+              thrive on training sessions, exploring nature, and being constant
+              companions in everything I do. Whether we're hiking through
+              forests or sharing quiet moments at home, their presence makes
+              every day an adventure.
+            </p>
+          </div>
+          <div>
+            <img
+              class="img-responsive"
+              src="https://i.imgur.com/N1JiXeh.jpeg"
+              alt="Saarloos wolfdog"
+            />
+          </div>
         </div>
-        <div>
-          <img
-            class="img-responsive"
-            src="https://i.imgur.com/N1JiXeh.jpeg"
-            alt="Saarloos wolfdog"
-          />
+        <h2>Adventures With My Pack</h2>
+        <p class="center">
+          From mountain hikes to serene lakes, my wolfdogs and I explore the
+          world together.
+        </p>
+        <div class="grid-3-col grid">
+          <div>
+            <img
+              class="img-responsive"
+              src="https://i.imgur.com/uapR7OH.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="gallery-row">
+            <img
+              class="img-responsive"
+              src="https://i.imgur.com/zwZNgYd.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="img-responsive"
+              src="https://i.imgur.com/zRZQteG.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid-3-col grid">
+          <div>
+            <img
+              class="img-responsive"
+              src="https://i.imgur.com/zH5M4Qr.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="img-responsive"
+              src="https://i.imgur.com/lYtp1nT.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="img-responsive"
+              src="https://i.imgur.com/5v1Wdrb.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+        <h2>The Best Coding Coworkers</h2>
+        <p class="center">
+          They keep me company during long coding sessions and remind me to take
+          breaks.
+        </p>
+        <div class="grid-4-col grid">
+          <div>
+            <img
+              class="img-responsive"
+              src="https://i.imgur.com/0Url1zW.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="img-responsive"
+              src="https://i.imgur.com/XbITIdh.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="img-responsive"
+              src="https://i.imgur.com/KGqsei9.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="img-responsive"
+              src="https://i.imgur.com/9SM81ji.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+        <h2>Did You Know?</h2>
+        <p id="random-fact" class="center">
+          Click the button to learn something interesting about Saarloos
+          wolfdogs!
+        </p>
+        <div class="button-container">
+          <button onclick="showRandomFact()">Show Random Fact</button>
         </div>
       </div>
-      <h2>Adventures With My Pack</h2>
-      <p class="center">
-        From mountain hikes to serene lakes, my wolfdogs and I explore the world
-        together.
-      </p>
-      <div class="grid-3-col grid">
-        <div>
-          <img
-            class="img-responsive"
-            src="https://i.imgur.com/uapR7OH.jpeg"
-            alt=""
-          />
-        </div>
-        <div class="gallery-row">
-          <img
-            class="img-responsive"
-            src="https://i.imgur.com/zwZNgYd.jpeg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="img-responsive"
-            src="https://i.imgur.com/zRZQteG.jpeg"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="grid-3-col grid">
-        <div>
-          <img
-            class="img-responsive"
-            src="https://i.imgur.com/zH5M4Qr.jpeg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="img-responsive"
-            src="https://i.imgur.com/lYtp1nT.jpeg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="img-responsive"
-            src="https://i.imgur.com/5v1Wdrb.jpeg"
-            alt=""
-          />
-        </div>
-      </div>
-      <h2>The Best Coding Coworkers</h2>
-      <p class="center">
-        They keep me company during long coding sessions and remind me to take
-        breaks.
-      </p>
-      <div class="grid-4-col grid">
-        <div>
-          <img
-            class="img-responsive"
-            src="https://i.imgur.com/0Url1zW.jpeg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="img-responsive"
-            src="https://i.imgur.com/XbITIdh.jpeg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="img-responsive"
-            src="https://i.imgur.com/KGqsei9.jpeg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="img-responsive"
-            src="https://i.imgur.com/9SM81ji.jpeg"
-            alt=""
-          />
-        </div>
-      </div>
-      <h2>Did You Know?</h2>
-      <p id="random-fact" class="center">
-        Click the button to learn something interesting about Saarloos wolfdogs!
-      </p>
-      <button onclick="showRandomFact()">Show Random Fact</button>
-    </div>
+    </main>
+    <footer>
+      This project was created by
+      <a
+        href="https://github.com/ctoloczko"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Celina Toloczko-Mastalerz</a
+      >
+      for a
+      <a
+        href="https://www.shecodes.io/challenges"
+        target="_blank"
+        rel="noopener noreferrer"
+        >SheCodes</a
+      >
+      challenge.
+    </footer>
     <script>
       const facts = [
-        "Saarloos wolfdogs are a mix of German Shepherd and Eurasian wolf.",
-        "They are highly loyal but require experienced owners.",
-        "Saarloos wolfdogs thrive in active environments.",
-        "They have a striking wolf-like appearance.",
-        "These dogs are reserved with strangers but form deep bonds with their owners.",
+        " A Saarloos wolfdog can turn a slightly damp paw into a full-blown Shakespearean tragedy. They’ll limp dramatically but sprint like the wind the second they spot a squirrel.",
+        "No fence is high enough, no door is secure enough. If they decide they want to explore, they’ll channel Houdini and be gone before you can say “stay.",
+        "They’ll sit silently and watch you with piercing eyes when you do something silly, like dropping a snack… then judge you for not sharing.",
+        "Expect them to sniff their kibble, look at you, and sigh as if you’ve personally offended their refined palate.",
+        "Rain? The floor is lava. Snow? Pure joy. They’ll leap like deer, roll like maniacs, and act like they’re in a winter wonderland commercial.",
+        "Despite their size, Saarloos wolfdogs believe they are lapdogs and will casually climb on you, squashing all personal space boundaries.",
+        "They have an instinct for dramatic howls, making them the star of any spooky night. Your neighbors might think you're raising a werewolf.",
+        "They love the mountains but refuse to walk through puddles. A minor stream can suddenly require a dramatic leap worthy of an Olympic medal.",
+        "Saarloos wolfdogs are professional stalkers—in your home. Wherever you go, expect to turn around and find them staring, as if you owe them an explanation.",
+        "Their shedding is legendary. You’ll find fur in places you didn’t know existed—like your coffee, your keyboard, and somehow, your toothbrush.",
       ];
 
       function showRandomFact() {
