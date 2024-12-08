@@ -41,7 +41,7 @@
         padding: 40px;
       }
       h2 {
-        font-size: 40px;
+        font-size: 30px;
       }
       h1,
       h2,
@@ -77,6 +77,11 @@
         margin-bottom: 30px;
       }
 
+      button:hover {
+        background-color: rgb(0, 0, 0, 0.8);
+        color: #dbd9db;
+      }
+
       .button-container {
         display: flex;
         justify-content: center;
@@ -97,7 +102,8 @@
 
       .grid-2-col {
         grid-template-columns: 1fr 1fr;
-        padding-top: 30px;
+        padding: 30px 0 30px 0;
+        background-color: #dbd9db;
       }
 
       .grid-3-col {
@@ -115,11 +121,9 @@
         background-color: #dcd9db;
         border-radius: 4px;
       }
-
       .gallery-row {
         padding-bottom: 20px;
       }
-
       footer {
         font-size: 12px;
 
@@ -177,6 +181,10 @@
         .gallery-row {
           padding-bottom: 0;
         }
+
+        .last-pic {
+          margin-bottom: 10px;
+        }
       }
     </style>
   </head>
@@ -188,6 +196,7 @@
 
     <div class="container">
       <h2>Who Are Saarloos Wolfdogs?</h2>
+      <p class="center">Long story short</p>
 
       <div class="grid grid-2-col">
         <div>
@@ -225,7 +234,7 @@
         From mountain hikes to serene lakes, my wolfdogs and I explore the world
         together.
       </p>
-      <div class="grid-3-col grid">
+      <div class="grid-3-col grid gallery-row">
         <div>
           <img
             class="img-responsive"
@@ -233,14 +242,14 @@
             alt="Saarloos Wolfdog"
           />
         </div>
-        <div class="gallery-row">
+        <div>
           <img
             class="img-responsive"
             src="https://i.imgur.com/zwZNgYd.jpeg"
             alt="Saarloos Wolfdog"
           />
         </div>
-        <div>
+        <div class="last-pic">
           <img
             class="img-responsive"
             src="https://i.imgur.com/zRZQteG.jpeg"
@@ -306,12 +315,13 @@
           />
         </div>
       </div>
-      <h2>Did You Know?</h2>
+      <h2>Living with Legends: Random Facts and Daily Dramas</h2>
       <p id="random-fact" class="center">
-        Click the button to learn something interesting about Saarloos wolfdogs!
+        Curious? Tap Below to Discover a Saarloos Secret! Warning: These True
+        Stories May Contain Drama, Mischief, and Fur.
       </p>
       <div class="button-container">
-        <button onclick="showRandomFact()">Show Random Fact</button>
+        <button onclick="showRandomFact()">Reveal the Secret</button>
       </div>
     </div>
 
@@ -333,8 +343,8 @@
     </footer>
     <script>
       const facts = [
-        " A Saarloos wolfdog can turn a slightly damp paw into a full-blown Shakespearean tragedy. They’ll limp dramatically but sprint like the wind the second they spot a squirrel.",
-        "No fence is high enough, no door is secure enough. If they decide they want to explore, they’ll channel Houdini and be gone before you can say “stay.",
+        "A Saarloos wolfdog can turn a slightly damp paw into a full-blown Shakespearean tragedy. They’ll limp dramatically but sprint like the wind the second they spot a squirrel.",
+        "No fence is high enough, no door is secure enough. If they decide they want to explore, they’ll channel Houdini and be gone before you can say STAY.",
         "They’ll sit silently and watch you with piercing eyes when you do something silly, like dropping a snack… then judge you for not sharing.",
         "Expect them to sniff their kibble, look at you, and sigh as if you’ve personally offended their refined palate.",
         "Rain? The floor is lava. Snow? Pure joy. They’ll leap like deer, roll like maniacs, and act like they’re in a winter wonderland commercial.",
@@ -343,6 +353,27 @@
         "They love the mountains but refuse to walk through puddles. A minor stream can suddenly require a dramatic leap worthy of an Olympic medal.",
         "Saarloos wolfdogs are professional stalkers—in your home. Wherever you go, expect to turn around and find them staring, as if you owe them an explanation.",
         "Their shedding is legendary. You’ll find fur in places you didn’t know existed—like your coffee, your keyboard, and somehow, your toothbrush.",
+        "A Saarloos wolfdog announces pure joy to the world with a loud, trumpet-like 'Buuuu.' It’s not a howl, not a bark—just their unique, dramatic flair.",
+        "When a Saarloos decides 'no,' it means NO. They’ll plop down like a stubborn donkey, and that’s the end of the story. Convincing them? Only with the sweetest, most polite pleading.",
+        "A Saarloos can sneak into your bed so quietly you won’t notice. They’ll settle at your feet or pin you down with their weight, and you’ll wake up wondering why you can’t breathe.",
+        "They play rough—grabbing and mock biting during play. Other dogs on walks often don’t get the joke.",
+        "Grooming? Absolutely not—unless you use *your* brush. Then, they might consider it.",
+        "Overnight guests might wake up to a 'gift' left outside their door. Interpret that however you wish!",
+        "Neighbors might whisper about a wolf in the forest. You’ll field questions like, 'Can you adopt a wolf from the zoo? But you can’t tame them, right?'",
+        "Training requires a seasoned expert. Our local dog-training guru gave up after three months, declaring, 'It’s a wolf. You can’t argue with that.'",
+        "There’s a subtle difference between 'eyes about to bite' and 'eyes asking for pets.' Non-wolfdog people? They’ll never see it coming.",
+        "People on walks often ask sympathetically, 'How long have you had this poor, scared dog?' because of their shy demeanor.",
+        "Saarloos wolfdogs will teach you to keep your kitchen spotless. Leave a pan with leftovers, and they’ll wait until you’re gone to 'clean up' with surgical precision.",
+        "Once, ours created chaos upstairs to distract us, then snuck into the kitchen downstairs to steal meat from a second-row pan. Nothing was knocked over, but the satisfied belch gave her away.",
+        "Closed doors? Not allowed. They want every room open and every person in sight. Privacy in the bathroom? Forget it.",
+        "Physical strength? They once pulled me several meters through the mud after spotting an injured deer. Another time, a sudden yank sent me flying Disney-style, complete with sparkles in my vision.",
+        "Leave them home alone, and they’ll howl like a heartbroken werewolf. Once, our son (studying for exams) endured sleepless nights because the howling didn’t stop. He still talks about it in horror.",
+        "During training, we tried desensitizing her to delivery drivers. The courier gave her treats, and she seemed fine. But as he left, she calmly turned and nipped his crotch. No injuries, but she never forgot the sound of his car engine.",
+        "They’ll pretend to sleep deeply, waiting for you to leave the kitchen door open. The moment you’re gone, it’s game on—food theft in full swing.",
+        "Hedgehogs in the garden? They’ll dig craters around them like little bomb sites. If the hedgehog dares to sit on stonework, they might even rip out the paving stones.",
+        "A Saarloos can cut through a chain-link fence like butter if something interesting is happening on the other side. For us, it was the neighbor’s tortoise. We’ve repaired that fence *many* times.",
+        "Forget about a clean car. With a Saarloos, there’s always fur, drool, and occasionally vomit.",
+        "Non-spill water bowls? Nice try. When they drink, water goes everywhere—except into their mouth.",
       ];
 
       function showRandomFact() {
